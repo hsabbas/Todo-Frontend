@@ -2,3 +2,10 @@
   display: flex;
   flex-direction: row;
 }
+
+.github-logo{
+  position: fixed;
+  left: 97%;
+  top: 95%;
+  width: 50px;
+}

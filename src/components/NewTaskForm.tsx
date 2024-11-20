@@ -8,7 +8,6 @@ export default function NewTaskForm({ createTask, closeForm }: { createTask: (ne
     const [taskDesc, setTaskDesc] = useState("");
     const [hasDueDate, setHasDueDate] = useState(false);
     const [dueDate, setDueDate] = useState<string>("");
-    const [errorMsg, setErrorMsg] = useState<string>("")
 
     function handleSubmit() {
         const newDueDate = hasDueDate ? new Date(dueDate.replace(/-/g, '\/')) : undefined;

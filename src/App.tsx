@@ -8,6 +8,7 @@ import Login from './pages/Login'
 import { createContext, useEffect, useState } from 'react'
 import { User } from './model/User'
 import { getUser, logout } from './utils/APIUtils'
+import imgUrl from '../images/github-mark.png'
 
 
 export const CurrentUserContext = createContext(new User(0, "", false));
@@ -53,6 +54,11 @@ function App() {
         </Routes>
         </CurrentUserContext.Provider>
       </BrowserRouter >
+      <footer>
+        <a href='https://github.com/hsabbas/Todo-Frontend'>
+          <img className='github-logo' alt='Github Repo' src={imgUrl}></img>
+        </a>
+      </footer>
     </>
   )
 }
