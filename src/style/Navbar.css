@@ -1,0 +1,27 @@
+.navbar-header{
+    display: flexbox;
+    flex-direction:row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.navbar-header a {
+    text-decoration: none;
+}
+
+.header-title{
+    color: black;
+}
+
+.navbar-btns{
+    align-content: center;
+}
+
+.navbar-header button{
+    background: none;
+    border: 2px solid #0077FF;
+    color: #0077FF;
+    font-size: 1rem;
+    font-weight: 550;
+    margin: 5px;
+}

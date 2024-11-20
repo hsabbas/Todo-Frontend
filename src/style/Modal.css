@@ -1,0 +1,62 @@
+.modal{
+    display: block;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.delete-prompt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20% auto;
+    height: 5rem;
+    width: 10rem;
+    text-align: center;
+}
+
+.delete-btns{
+    margin-top: 10px;
+}
+
+.delete-btns button{
+    margin: 5px;
+}
+
+.task-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20% auto;
+    width: 80%;
+    text-align: center;
+}
+
+.name-input{
+    height: 2rem;
+    width: 40%;
+    margin: 10px;
+}
+
+.desc-input{
+    height: 5rem;
+    width: 40%;
+    margin: 10px;
+    word-wrap:break-word;
+}
+
+.submit-btn{
+    margin: 10px
+}
+
+.login-prompt{
+    margin: 20% auto;
+}
+
+.register-success-msg{
+    margin: 10px;
+}

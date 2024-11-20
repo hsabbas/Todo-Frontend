@@ -1,0 +1,34 @@
+.form-page{
+    text-align: center;
+    justify-items: center;
+}
+
+.form{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-btn{
+    width: 5rem;
+    height: 2rem;
+}
+
+.text-input {
+    width: 15rem;
+    height: 2rem;
+    margin-bottom: 40px;
+}
+
+.login-form label{
+    margin-bottom: 15px;
+}
+
+.error-msg{
+    color: red;
+}
