@@ -11,7 +11,6 @@ type TaskItemInfo = {
 
 export default function TaskItem({ taskItemInfo }: { taskItemInfo: TaskItemInfo }) {
     const task : Task = taskItemInfo.task;
-    const creationDate: Date = new Date(task.creationDate);
     const [complete, setComplete] = useState<boolean>(task.complete);
 
     return (

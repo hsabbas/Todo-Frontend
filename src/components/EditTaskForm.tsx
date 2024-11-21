@@ -8,7 +8,6 @@ export default function EditTaskForm({ handleUpdateTask, task, closeForm }: { ha
     const [taskDesc, setTaskDesc] = useState(task.description);
     const [hasDueDate, setHasDueDate] = useState<boolean>(task.dueDate !== null)
     const [dueDate, setDueDate] = useState<string>(dateToString(task.dueDate));
-    const [errorMsg, setErrorMsg] = useState<string>("")
 
     function handleSubmit() {
         const newDueDate = hasDueDate ? new Date(dueDate.replace(/-/g, '\/')) : undefined;

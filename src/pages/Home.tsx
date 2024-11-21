@@ -31,7 +31,6 @@ export default function Home() {
             if (response.status == 200) {
                 response.json().then(json => {
                     let fetchedTasks: Task[] = json;
-                    console.log(fetchedTasks);
                     
                     setTasks(fetchedTasks);
                 })
@@ -69,7 +68,6 @@ export default function Home() {
             if(response.status === 201) {
                 response.json().then(json => {
                     let updatedTask: Task = json;
-                    console.log(updatedTask);
                     
                     const newTasks = tasks.map((task : Task) : Task =>  {return task.taskId === updatedTask.taskId ? updatedTask : task});
                     setTasks(newTasks);
